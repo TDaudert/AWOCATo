@@ -7,7 +7,7 @@ AWOCATo is a web-based annotation and consolidation tool for texts specifically 
 - Ternary classification
 - Textual annotation (including spans)
 
-Besides providing different annotation modi, AWOCATo also comes with a functionality to consolidate the annotations. While switching between annotation and consolidation only requires to change one binary variable in the configuration file, the front-end is replaced and users logging-in are presented with previously annotated texts. Further, AWOCATo accepts certain parameters such as the standard deviation and the minimum of required annotations and consolidates all texts satisfying these parameters automatically upfront. More information regarding technical specifications are stated in [configuration_manual.pdf](https://github.com/TDaudert/AWOCATo/configuration_manual.pdf). A fast overview about how to start with AWOCATo is given in [quickstart.pdf](https://github.com/TDaudert/AWOCATo/quickstart.pdf).
+Besides providing different annotation modi, AWOCATo also comes with a functionality to consolidate the annotations. While switching between annotation and consolidation only requires to change one binary variable in the configuration file, the front-end is replaced and users logging-in are presented with previously annotated texts. Further, AWOCATo accepts certain parameters such as the standard deviation and the minimum of required annotations and consolidates all texts satisfying these parameters automatically upfront. More information regarding technical specifications are stated in [configuration_manual.pdf](https://github.com/TDaudert/AWOCATo/blob/master/configuration_manual.pdf). A fast overview about how to start with AWOCATo is given in [quickstart.pdf](https://github.com/TDaudert/AWOCATo/blob/master/quickstart.pdf).
 
 Graphical examples and a description of the interface can be found in the [original paper](https://www.aclweb.org/anthology/2020.lrec-1.872.pdf). 
 
@@ -15,7 +15,7 @@ Graphical examples and a description of the interface can be found in the [origi
 
 AWOCATo files come in the following structure. 
 
-<img src="https://github.com/TDaudert/AWOCATo/AWOCATo_structure.png"  width="250">
+<img src="https://github.com/TDaudert/AWOCATo/blob/master/AWOCATo_structure.png"  width="250">
 
 
 ## Reference 
