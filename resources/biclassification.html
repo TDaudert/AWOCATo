@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB">
+<head>
+<!--HEADER-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="icon" href="css/images/favicon.png" type="image/ico" sizes="16x16">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Annotation</title>
+
+	<!--Imports-->
+	<link type='text/css' rel='stylesheet' href='css/biclassification.css'>
+	<script src="javascript/jquery-3.3.1.min.js"></script>
+	<script src="javascript/biclassification.js"></script>
+	<script src="javascript/protect_data.js"></script>
+	
+</header>
+<body>
+<table id="contenttable" align="center">
+	<tr>
+		<td align="center">
+			<form method="POST" target="_self" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded">
+			<table width="1000px" cellspacing="20px" border="0">
+				<colgroup>
+					<col with="950px">
+					<col with="50px">
+				</colgroup>
+				<tr>
+					<td align="left" id="progressfield"></td><td align="right"><a href="start.html#faq"><img src="css/images/questionmark.png" alt="Question?" width="40px" height="40px"></a></td>
+				</tr>
+				<tr class="step2">
+					<td align="center" colspan="2"><div id="endscreen"></div></td>
+				</tr>
+				<tr class="step1">
+					<td align="center" colspan="2"><div id="datadisplay"></div></td>
+				</tr>
+				<tr class="step1">
+					<td align="center" colspan="2">
+						<table width="100%" cellspacing="20px" border="0">
+							<tr>
+								<td align="right"><input type="button" id="submitannotation1" value=""></td>
+								<td align="left"><input type="button" id="submitannotation2" value=""></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr class="step1">
+					<td align="center" colspan="2">
+						<table width="100%" cellspacing="5px" border="0">
+								<td align="right"><input type="button" class="obutton" id="submitnoidea" value="I don't know"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</form>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

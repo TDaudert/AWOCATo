@@ -1,0 +1,126 @@
+{
+	"port_number": 8080,
+	"accounts": [
+		{"username": "User1", "password": "passwordxx1"},
+		{"username": "User2", "password": "passwordxx2"},
+		{"username": "User3", "password": "passwordxx3"}
+	],
+	"mongodb_settings_password-protected-db": {
+		"url": "username",
+		"port": "password@123.4.56.789/database_name",
+		"database": "database_name",
+		"collection": "collection_name",
+		"items_per_query": 10
+	},"mongodb_settings": {
+		"url": "localhost",
+		"port": 27027,
+		"database": "realannotation",
+		"collection": "tooltest_stocktwits",
+		"items_per_query": 10
+	},
+	"consolidation_mode": false,
+	"guideline_at_start": true,
+	"annotation_mode": "sentiment",
+	"mode_settings": {
+		"sentiment": {
+			"standard_deviation_relevance": 0.31,
+			"polarity_threshold": 0.05,
+			"same_polarity_annotation": 3,
+			"data_specifications": {
+				"fields_to_display_text": [["body"]],
+				"fields_to_display_entity": [["entity"]],
+				"fields_to_query": ["body", "entity"],
+				"fields_to_store_in": ["sentiment","relevance"]
+			},
+			"interface_settings": {
+				"idontknow_value": 4
+			}
+		},
+		"sentiment-news": {
+			"standard_deviation_relevance": 0.20,
+			"polarity_threshold": 0.05,
+			"same_polarity_annotation": 3,
+			"data_specifications": {
+				"fields_to_display_text": [["text"]],
+				"fields_to_display_entity": [["entity"]],
+				"fields_to_display_title": [["title"]],
+				"fields_to_query": ["text", "title","entity"],
+				"fields_to_store_in": ["sentiment","relevance"]
+			},
+			"interface_settings": {
+				"idontknow_value": 4
+			}
+		},
+		"bi-classification": {
+			"data_specifications": {
+				"fields_to_display_text": [["body"]],
+				"fields_to_query": ["body"],
+				"fields_to_store_in": ["investor_sentiment"]
+			},
+			"interface_settings": {
+				"idontknow_value": 4,
+				"class_names": [
+					{
+						"class_name": "Bullish",
+						"annotation_value": 1,
+						"button_color_bg": "#FFB266",
+						"button_color_border": "#FF8000"
+					},
+					{
+						"class_name": "Bearish",
+						"annotation_value": 2,
+						"button_color_bg": "#0E92A1",
+						"button_color_border": "#09656F"
+					}
+				],
+				"button_at_side": false
+			}
+		},
+		"tri-classification": {
+			"data_specifications": {
+				"fields_to_display_text": [["body"]],
+				"fields_to_query": ["body"],
+				"fields_to_store_in": ["investor_sentiment"]
+			},
+			"interface_settings": {
+				"idontknow_value": 4,
+				"class_names": [
+					{
+						"class_name": "Bullish",
+						"annotation_value": 1,
+						"button_color_bg": "#FFB266",
+						"button_color_border": "#FF8000"
+					},
+					{
+						"class_name": "Bearish",
+						"annotation_value": 2,
+						"button_color_bg": "#0E92A1",
+						"button_color_border": "#09656F"
+					},
+					{
+						"class_name": "Neutral",
+						"annotation_value": 3,
+						"button_color_bg": "#006633",
+						"button_color_border": "#003319"
+					}
+				],
+				"button_at_side": false
+			}
+		},
+		"textual-annotation": {
+			"data_specifications": {
+				"fields_to_display_text": [["body"]],
+				"fields_to_query": ["body"],
+				"fields_to_store_in": ["name_of_your_choice_textual_annotation"]
+			},
+			"interface_settings": {
+				"idontknow_value": 4
+			}
+		}
+	},
+	"consolidation_settings": {
+		"minimum_annotations": 3,
+		"standard_deviation": 0.21,
+		"accepted_annotators": [0,1,2]
+	}
+}
