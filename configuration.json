@@ -14,8 +14,8 @@
 	},"mongodb_settings": {
 		"url": "localhost",
 		"port": 27027,
-		"database": "realannotation",
-		"collection": "tooltest_stocktwits",
+		"database": "database_name",
+		"collection": "collection_name",
 		"items_per_query": 10
 	},
 	"consolidation_mode": false,
